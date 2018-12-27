@@ -7,15 +7,11 @@
     <title>Document</title>
   </head>
   <body>
-    <img src="ninja.svg" alt="" />
-    <svg width="1000" height="1000">
-      <!-- <rect x="0" y="0" fill="" width="200" height="200"></rect> -->
-      <path
-        d="M 150 50 L 75 200 L 225 200 C 225 200 150 150 150 50"
-        fill="orange"
-      ></path>
-      <circle cx="150" cy="150" r="5" fill="grey"></circle>
-      <line x1="225" y1="200" x2="150" y2="50" stroke="grey"></line>
-    </svg>
+    <div class="canvas">
+      <svg width="600" height="600"><circle></circle></svg>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="planets.js"></script>
   </body>
 </html>
