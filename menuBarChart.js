@@ -4,6 +4,17 @@ const svg = d3
   .attr("width", 600)
   .attr("height", 600);
 // asynchronous returns promise and fire call back function
+
+const margin = { top: 20, right: 20, bottom: 100, left: 100 };
+const graphWidth = 600 - margin.left - margin.right;
+const graphHeight = 600 - margin.top - margin.bottom;
+
+// 'g' is group
+const graph = svg
+  .append("g")
+  .attr("width", graphWidth)
+  .attr("height", graphHeight);
+
 d3.json("menu.json").then(data => {
   const y = d3
     .scaleLinear()
